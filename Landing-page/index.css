@@ -39,6 +39,11 @@ main > .container-form > form{
     
 }
 
+main > .container-info > p > .underline-text{
+    text-decoration: underline;
+    text-decoration-color: gray;
+} 
+
 main > .container-form > form> input{
     width: 70%;
     border-radius: 5px;
