@@ -1,0 +1,137 @@
+
+body{
+    background: linear-gradient(100deg, rgba(10, 10, 10, 0.932) 50%, rgba(53, 53, 53, 0.39) 95%) no-repeat center center fixed, url(../Landing-page/src/images/bg01.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* background: url('./src/images/bg01.jpg') no-repeat center center fixed;
+    background-size: cover; */
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+}
+
+
+main > .container-info {
+   display: flex;
+   flex-direction: column;
+   margin: 13em 0 0 30px;
+
+}
+
+main > section >span{
+    font-size: 62px;
+    font-style: normal;
+}
+
+main > section >p {
+    width: 670px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 25px;
+    line-break: break-all;
+
+}
+
+main > .container-form > form{
+    margin: 1em 0 0 22px;
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    justify-content: space-evenly;
+    
+}
+
+main > .container-form > form> input{
+    width: 70%;
+    border-radius: 5px;
+    height: 30px;
+    background-color: black;
+    color: gainsboro;
+    padding: 5px 0px 5px 10px;
+    border: rgb(155, 152, 152) 1px ;
+    border-style:double
+}
+
+main > .container-form > form > button{
+    background-color: #1cb495;
+    color: white;
+    padding: 5px 19px 5px 19px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+main > .container-form > label{
+   
+    margin: 0px 0px 0 30px;
+}
+footer > .icons{
+      display: flex;
+      margin-top: 10%;
+      
+}
+
+
+ul{
+    display: flex;
+}
+a{
+    font-size: 24px;
+}
+li{
+    color: rgb(90, 90, 90);
+
+    margin: 12px 20px 0 0;
+    list-style: none;
+}
+
+
+footer > .credits{
+    display: flex;
+    margin-left: 36px;
+}
+
+footer > .credits > .author{
+    margin-right: 12px;
+    padding: 5px;
+    color: rgb(90, 90, 90);
+    border-right: rgb(90, 90, 90) 3px solid;
+}
+
+footer > .credits > .brand{
+    margin-right: 12px;
+    padding-top: 5px;
+    color: rgb(90, 90, 90);
+}
+
+@media (min-width: 268px) and (max-width: 750px) { 
+
+     
+    .container-info > span, p{
+        display: none;
+    }
+
+
+    main > .container-form > form{
+
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    main > .container-form > form > input{
+        margin-right:33px ;
+    }
+    
+    main > .container-form > form > input,button {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    main > .container-form > form > button {
+        margin-bottom: 10px;
+        padding: 10px 0px 10px 0;
+        width: 93%;
+    }
+
+
+   footer > .icons {
+       margin: 350px 0 0px 0;
+   }
+     
+}
