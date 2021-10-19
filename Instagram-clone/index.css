@@ -1,0 +1,342 @@
+.stackicon{
+    height: 30px; 
+    margin: 5px 12px 10px 12px;
+      
+   }
+
+    ul{
+       display: flex;
+       justify-content: space-evenly;
+       list-style: none;
+       margin: 0px;
+   }
+
+   ul > li{
+      
+  position: relative;
+  transition: 0.5s;
+  display: block;
+
+   }
+
+   ul > li > ul {
+    display: none;
+
+   }
+
+   ul li:hover ul
+{
+    margin-left: -62px;
+
+  background-color: white;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 3px;
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+ul li ul li{
+    border-bottom: 1px #adadad solid;
+    padding: 15px;
+    font-weight: bold;
+}
+   .img{
+    height: 30px;
+    margin-right: 13px;
+   }
+
+  
+
+
+
+
+main{
+    background-color: #fafafa    ;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px gainsboro solid;
+    padding: 10px;
+}
+
+nav > input{
+    text-align: center;
+    font-weight: bold;
+    width:20%;
+}
+nav > .icon > img{
+   height: 30px;
+   margin-right: 13px;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main  > .insta-feed > .insta-stories{
+    display: flex;
+    border: 1px #dbdbdb solid;
+    margin: 12px 0 12px 0;
+    background-color: #FFFFFF;
+    padding: 10px 143px 10px 12px;
+}
+
+main > .insta-feed > .insta-stories > .stack {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+main  > .insta-feed > .insta-stories > .stack > img{
+    border-radius: 50%;
+    height: 60px;
+    border-style: solid;
+    margin: 3px 10px 3px 10px;
+    border: 3px orange solid;
+
+}
+
+main > .insta-feed > .user-feed{
+    margin: 0 0 20px 0;
+}
+
+main > .insta-feed > .user-feed > .card{
+  
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border: 0px gainsboro solid;
+}
+
+
+main > .insta-feed > .user-feed > .card > .card-top{
+    display: flex;
+    justify-content: space-between;
+
+}
+  
+
+main > .insta-feed > .user-feed > .card > .card-top > .user-info{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+
+main > .insta-feed > .user-feed > .card > .card-top > .user-info > img{
+  height: 53px;
+  border-radius: 50%;
+  border: 3px orange solid;
+
+}
+
+main > .insta-feed > .user-feed > .card > .card-top > .user-info > span{
+   
+   margin-left: 12px;
+   font-weight: bold;
+  }
+
+main > .insta-feed > .user-feed > .card > .card-top > .icon{
+    display: flex;
+    justify-content: flex-end;
+    border: 2px red solid;
+  }
+  
+  main > .insta-feed > .user-feed > .card > .card-top > .post-icon{
+    display: flex;
+    align-items: center;
+  }
+  main > .insta-feed > .user-feed > .card > .card-top > .post-icon > img{
+    height: 20px;
+    margin-right: 12px;
+  }
+
+
+main > .insta-feed > .user-feed > .card > .user-post {
+    display: flex;
+}
+
+main > .insta-feed > .user-feed > .card > .user-post > img {
+
+    width: 100%;
+    height: 550px;
+}
+
+
+main > .insta-feed > .user-feed > .card > .insta-save-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+main > .insta-feed > .user-feed > .card > .insta-save-icon > .insta-icon{
+    display: flex;
+}
+
+
+main > .insta-feed > .user-feed > .card > .insta-save-icon > .insta-savefeed-icon{
+    display: flex;
+    
+}
+
+main > .insta-feed > .user-feed > .card > .user-comments{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+main > .insta-feed > .user-feed > .card > .user-comments > .user{
+   font-weight: bold;
+   margin-right: 10px;
+}
+
+
+main > .insta-feed > .user-feed > .card > .user-comments > .comment{
+    font-weight: bold;
+    color: #808080;
+ }
+ 
+ main > .insta-feed > .user-feed > .card > .add-comments-stack{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ 
+ main > .insta-feed > .user-feed > .card > .add-comments-stack > .comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main > .insta-feed > .user-feed > .card > .add-comments-stack > .post{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.comment-text{
+    color:#808080;
+}
+.mg{
+    font-weight: bolder;
+    font-size: medium;
+    color: #00b2f9;
+    margin-right: 10px;
+}
+
+/* suggestion of instagram*/
+
+main > .insta-suggestions > .card{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0 12px 0;
+}
+
+main > .insta-suggestions > .card > .suggested-people{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+main > .insta-suggestions > .card > .suggested-people > .one {
+    display: flex;
+    flex-direction: row;
+}
+
+main > .insta-suggestions > .card > .suggested-people > .one > img{
+    border-radius: 50%;
+    height: 50px;
+}
+
+
+main > .insta-suggestions > .card > .suggested-people > .one > .names{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+ .suggestion-title{
+   font-weight: 600;
+   color: #808080;
+ }
+.mg{
+    margin-left: 10px;
+}
+.name{
+    font-weight: bolder;
+    color: #262626 ;
+}
+
+.names2{
+    font-weight: 500;
+    color: #808080;
+}
+
+.names3{
+    font-weight: bold;
+    color: #00b2f9    ;
+}
+
+
+main > .insta-suggestions > .card > .suggested-people > .two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 132px;
+ }
+ 
+@media (min-width:230px) and (max-width:600px){
+  /* image issue in stories adjust on mediaport accordingly other than works super on  devices*/
+    .hide{
+        display: none;
+    }
+
+    .mb-img{
+        height: 20px;
+    }
+
+    nav > .icon > img{
+        height: 20px;
+        margin-right: 3px;
+     }
+     
+     main  > .insta-feed > .insta-stories > .stack > img{
+        border-radius: 50%;
+        height: 50px;
+        border-style: solid;
+        margin: 0px px 0px 0px; 
+        border: 3px orange solid;
+    
+    }
+
+    main  > .insta-feed > .insta-stories{
+        display: flex;
+        border: 1px #dbdbdb solid;
+        margin: 0px 0 0px 0; 
+        background-color: #FFFFFF;
+        padding: 0px 0px 0px 0px; 
+    }
+
+    
+main > .insta-feed > .user-feed > .card > .user-post > img {
+
+    width: 100%;
+    height: 350px;
+}
+
+main > .insta-feed > .user-feed > .card{
+  
+    border: 0px gainsboro solid;
+}
+ 
+}
