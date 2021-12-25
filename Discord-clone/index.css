@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-secondary-alt: #292b2f;
+}
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar > .sidebar-groups{
+    background-color: #202225;
+    padding: 10px;
+    border-right: 2px solid #2F3136;
+    overflow-y: auto;
+}
+
+.sidebar > .sidebar-groups::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+/* sidebar-groups user icons*/
+
+.sidebar > .sidebar-groups > .user{
+    height:50px;
+    width: 50px;
+    background-color: #32353B;
+    margin-bottom: 1.2em;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.sidebar > .sidebar-groups > .user:hover{
+    height:50px;
+    width: 50px;
+    background-color: rgb(244, 245, 247);
+    margin-bottom: 1.2em;
+    border-radius: 30%;
+}
+
+
+.sidebar > .sidebar-groups > .user > .icon-logo > img{
+    height: 45px;
+    padding: 3px;
+}
+
+
+.sidebar > .sidebar-groups > .user-1 > .icon > img{
+    height:50px;
+    width: 50px;
+    background-color: #2F3136;
+    margin-bottom: 1.2em;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.sidebar > .sidebar-groups > .user-1 > .icon > img:hover{
+    height:50px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    width: 50px;
+    margin-bottom: 1.2em;
+    border-radius: 30%;
+}
+
+/*Second sidebar section starts here*/
+
+.sidebar > .sidebar-users{
+    background-color: #2F3136;
+    flex: 1.4;
+    border-right: 2px solid #32353B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar > .sidebar-users > .col{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sidebar > .sidebar-users > .col >.title-subject{
+    padding: 0.6em;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-family: 'Lexend', sans-serif;;
+}
+
+.sidebar > .sidebar-users > .col> ul > li {
+    margin: 5px;
+    list-style: none;
+}
+
+.sidebar > .sidebar-users > .col> ul > li:hover {
+    background-color: #5865F2;
+}
+
+.sidebar > .sidebar-users > .col> ul > li > .icon:hover > span {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+
+.sidebar > .sidebar-users > .col> ul > li > .icon{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.sidebar > .sidebar-users > .col> ul > li> .icon> svg{
+    height: 25px;
+    width: auto;
+    color: #FFFFFF;
+}
+
+
+.sidebar > .sidebar-users > .col> ul > li> .icon> span{
+    padding: 5px 0px 0px 20px;
+    font-weight:bold;
+    color: #999a9b;
+    letter-spacing: 1px;
+}
+
+/* user dock section starts*/
+.sidebar > .sidebar-users > .user-dock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 3px 10px 10px ;
+}
+
+
+.sidebar > .sidebar-users > .user-dock > .col {
+    display: flex;
+}
+
+
+.sidebar > .sidebar-users > .user-dock > .col > .userdetail {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidebar > .sidebar-users > .user-dock > .col > .userdetail > .name{
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+
+.sidebar > .sidebar-users > .user-dock > .col > .userdetail > .id{
+    font-weight: bolder;
+    color:#999a9b
+}
+
+.sidebar > .sidebar-users > .user-dock > .col > svg{
+    
+    margin: 5px;
+    color:#999a9b
+}
+/* user dock section ends*/
+
+/*Second sidebar section ends */
+
+
+/* Main user section starts here*/
+.sidebar > .sidebar-user-chat{
+    background-color: #32353B;
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar > .sidebar-user-chat > .container{
+    background-color: #5865F2;
+    border-radius: 3px;
+    height: 400px;
+    width: 94%;
+    margin: 30px;
+    background: url('./imgs/container_search.svg') no-repeat;
+    background-size: cover;
+    padding: 55px 0px 55px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sidebar > .sidebar-user-chat > .container > .title {
+    display: flex;
+    font-family: 'Lexend', sans-serif;
+    color: #FFFFFF;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.sidebar > .sidebar-user-chat > .container > .title > input {
+    margin-top: 10px;
+    height: 2.5em;
+    border-radius: 3px;
+    border-color: #5865F2;
+    padding: 5px;
+}
+
+
+.sidebar > .sidebar-user-chat > .container > .title > input:focus {
+    border:2px solid #eeeff7;
+}
+
+/*cards section starts here*/
+.sidebar > .sidebar-user-chat > .main-container{
+   display: flex;
+   margin: 0px 0px 20px 30px;
+   gap:40px;
+   flex-wrap: wrap;
+}
+
+
+.sidebar > .sidebar-user-chat > .main-container > .title{
+    display: flex;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: 'Lexend', sans-serif;
+    margin-right: 3px;
+ }
+
+.sidebar > .sidebar-user-chat > .main-container > .card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px #32353B;
+    justify-content: space-around;
+    border-radius: 8px;
+    background-color:  var(--background-secondary-alt);
+    cursor: pointer;
+    width: 350px;
+    
+    
+}
+
+.sidebar > .sidebar-user-chat > .main-container > .card:hover{
+
+    box-shadow: 10px 4px #242527;
+   
+    
+}
+
+
+
+
+.sidebar > .sidebar-user-chat > .main-container > .card > .col > .title > svg{
+    height: 20px;
+    margin: 0px 0px 0px 5px;
+}
+
+.sidebar > .sidebar-user-chat > .main-container > .card > img{
+    width: auto;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.sidebar > .sidebar-user-chat > .main-container > .card > .col > .title {
+    padding: 20px 0px 15px 0px;
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif;
+    color: #e5e2e2;
+
+}
+
+.sidebar > .sidebar-user-chat > .main-container > .card > .col-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 25px 0px;
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif;
+    color: #B9BBBE;
+    font-weight: normal;
+}
+
+
+.sidebar > .sidebar-user-chat > .main-container > .card > .col-2 > span {
+  height: 15px;
+}
+
+.sidebar > .sidebar-user-chat > .main-container > .card > .col-2 > .card-members-status {
+    color: #4158D0;
+    color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    animation: hue 5s infinite ease-in;
+  }
+  
+
+
+.sidebar > .sidebar-user-chat > .main-container > .card > span {
+    padding: 0px 0px 20px 10px;
+    font-size: 0.7em;
+    font-family: 'Lexend', sans-serif;
+    color: #B9BBBE;
+    word-spacing: 0.2em;
+    line-height: 1.7;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+
+/* user avatar icon logo */
+
+.avatar-user-icon{
+    height: 35px;
+}
+
+
+/* Media query*/
+
+@media screen and (min-width:360px) and (max-width:369px){
+
+    .sidebar > .sidebar-users{
+        display: none;
+    }
+
+    .sidebar > .sidebar-groups{
+        display: none;
+    }
+    
+    .sidebar > .sidebar-user-chat > .container{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        padding: 10px 5px 10px 5px ;
+    }
+
+    .sidebar > .sidebar-user-chat >  .main-container > .card{
+        width: 300px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width:370px) and (max-width:379px){
+
+    .sidebar > .sidebar-users{
+        display: none;
+    }
+
+    .sidebar > .sidebar-groups{
+        display: none;
+    }
+    
+    .sidebar > .sidebar-user-chat > .container{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        padding: 10px 5px 10px 5px ;
+    }
+
+    .sidebar > .sidebar-user-chat >  .main-container > .card{
+        width: 320px;
+    }
+
+    
+
+    
+    
+}
+
+@media screen and (min-width:400px)  and (max-width:500px) {
+    .sidebar > .sidebar-users{
+        display: none;
+    }
+
+    .sidebar > .sidebar-user-chat > .container{
+        background-color: #5865F2;
+        border-radius: 3px;
+        height: 400px;
+        width: auto;
+        margin: 30px;
+        background: url('./imgs/container_search.svg') no-repeat;
+        background-size: cover;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .sidebar > .sidebar-groups{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+    
+     .sidebar > .sidebar-user-chat >  .main-container > .card{
+        width: 320px;
+    }
+    
+     
+} 
