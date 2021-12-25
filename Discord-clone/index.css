@@ -222,13 +222,14 @@
 }
 
 
-.sidebar > .sidebar-user-chat > .main-container > .title{
+.sidebar > .sidebar-user-chat >  .title{
     display: flex;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 1.2em;
     font-family: 'Lexend', sans-serif;
-    margin-right: 3px;
+    margin: 1.5em;
+
  }
 
 .sidebar > .sidebar-user-chat > .main-container > .card{
