@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 :root{
     --background-secondary-alt: #292b2f;
 }
@@ -175,7 +177,24 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    scroll-behavior: smooth;
+   
 }
+
+.sidebar > .sidebar-user-chat::-webkit-scrollbar{
+    width: 10px;
+}
+
+.sidebar > .sidebar-user-chat::-webkit-scrollbar-track{
+    background-color: #2a2b2c9a;
+}
+
+.sidebar > .sidebar-user-chat::-webkit-scrollbar-thumb {
+    border-radius: 33px;
+    background-color: #0e0f0f5d;
+}
+
+
 
 .sidebar > .sidebar-user-chat > .container{
     background-color: #5865F2;
@@ -188,6 +207,7 @@
     padding: 55px 0px 55px 0px;
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -219,6 +239,7 @@
    margin: 0px 0px 20px 30px;
    gap:40px;
    flex-wrap: wrap;
+   
 }
 
 
